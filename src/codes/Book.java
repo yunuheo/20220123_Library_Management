@@ -5,7 +5,9 @@ public class Book {
 	String title;
 	int rentFee;
 	int ageLimit;
-	User rentUser;
+	
+//	책을 빌려간 사람은? => 없다고 표현.
+	User rentUser = null;
 	
 	 void showBookInfo() {
 		System.out.println("===== 도서 정보 출력 =====");
@@ -19,6 +21,14 @@ public class Book {
 		else {
 			System.out.println(ageLimit+"세 이용가");
 		}
+		
+		if (rentUser!=null) {
+			System.out.println("빌려간 사람 : "+rentUser.name);
+		}
+		else {
+			System.out.println("빌려간 사람 : 없음");
+		}
+		
 	}
 
 }
