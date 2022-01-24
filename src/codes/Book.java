@@ -30,6 +30,7 @@ public class Book {
 			System.out.println(this.ageLimit+"세 이용가");
 		}
 		
+//		빌려간 사람이 있는가? 있다면 그사람의 이름 표시. 없다면 "대여가능" 표시.
 		if (rentUser!=null) {
 			System.out.println("빌려간 사람 : "+rentUser.name);
 		}
